@@ -52,7 +52,7 @@ namespace Testing.Controllers
             return View(prod);
         }
 
-        public IActionResult InsertProductToDatatbase(Product productToInsert)
+        public IActionResult InsertProductToDatabase(Product productToInsert)
         {
             repo.InsertProduct(productToInsert);
             return RedirectToAction("Index");
